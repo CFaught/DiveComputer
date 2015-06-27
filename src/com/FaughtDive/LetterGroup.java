@@ -13,13 +13,13 @@ public class LetterGroup {
 	public void Diver(int depth, int bottomtime){
 		//take depth and time to calculate ending diver letter.
 		
-		if(depth <= 40.00){
+		if(depth <= 40){
 			//if depth was less than forty feet, find bottom time column.
 			int[] timenum1 = {0, 5, 15, 25, 30, 40, 50, 70, 80, 100, 110, 130};
 			//step through the time columns of dive table.
 			int i;
 			for(i = 0; i <= 11; i++){
-				if(depth <= timenum1[i]){
+				if(bottomtime <= timenum1[i]){
 					//found column, break the loop.
 					correspondingNum = i;
 					break;
@@ -50,13 +50,13 @@ public class LetterGroup {
 				break;
 			}
 		
-		}else if(depth <= 50.00){
+		}else if(depth <= 50){
 			//if depth was less than fifty feet, find bottom time column.
 			int[] timenum2 = {0, 10, 15, 25, 30, 40, 50, 60, 70, 80};
 			//step through the time columns of dive table.
 			int i;
 			for(i = 0; i <= 8; i++){
-				if(depth <= timenum2[i]){
+				if(bottomtime <= timenum2[i]){
 					//found column, break the loop.
 					correspondingNum = i;
 					break;
@@ -84,13 +84,13 @@ public class LetterGroup {
 			}	
 			
 			
-		}else if(depth <= 60.00){
+		}else if(depth <= 60){
 			//if depth was less than sixty feet, find bottom time column.
 			int[] timenum3 = {0, 10, 15, 20, 25, 30, 40, 50, 55};
 			//step through the time columns of dive table.
 			int i;
 			for(i = 0; i <= 8; i++){
-				if(depth <= timenum3[i]){
+				if(bottomtime <= timenum3[i]){
 					//found column, break the loop.
 					correspondingNum = i;
 					break;
@@ -116,13 +116,13 @@ public class LetterGroup {
 			}	
 			
 			
-		}else if(depth <= 70.00){
+		}else if(depth <= 70){
 			//if depth was less than seventy feet, find bottom time column.
 			int[] timenum4 = {0, 5, 10, 15, 20, 30, 35, 40, 45};
 			//step through the time columns of dive table.
 			int i;
 			for(i = 0; i <= 8; i++){
-				if(depth <= timenum4[i]){
+				if(bottomtime <= timenum4[i]){
 					//found column, break the loop.
 					correspondingNum = i;
 					break;
@@ -148,13 +148,13 @@ public class LetterGroup {
 			}	
 			
 			
-		}else if(depth <= 80.00){
+		}else if(depth <= 80){
 			//if depth was less than eighty feet, find bottom time column.
 			int[] timenum5 = {0, 5, 10, 15, 20, 25, 30, 35};
 			//step through the time columns of dive table.
 			int i;
 			for(i = 0; i <= 7; i++){
-				if(depth <= timenum5[i]){
+				if(bottomtime <= timenum5[i]){
 					//found column, break the loop.
 					correspondingNum = i;
 					break;
@@ -178,13 +178,13 @@ public class LetterGroup {
 			}	
 			
 			
-		}else if(depth <= 90.00){
+		}else if(depth <= 90){
 			//if depth was less than ninety feet, find bottom time column.
 			int[] timenum6 = {0, 5, 10, 12, 15, 20, 25};
 			//step through the time columns of dive table.
 			int i;
 			for(i = 0; i <= 6; i++){
-				if(depth <= timenum6[i]){
+				if(bottomtime <= timenum6[i]){
 					//found column, break the loop.
 					correspondingNum = i;
 					break;
@@ -206,13 +206,13 @@ public class LetterGroup {
 			}	
 			
 			
-		}else if(depth <= 100.00){
+		}else if(depth <= 100){
 			//if depth was less than one hundred feet, find bottom time column.
 			int[] timenum7 = {0, 5, 7, 10, 15, 20, 22};
 			//step through the time columns of dive table.
 			int i;
 			for(i = 0; i <= 6; i++){
-				if(depth <= timenum7[i]){
+				if(bottomtime <= timenum7[i]){
 					//found column, break the loop.
 					correspondingNum = i;
 					break;
@@ -234,13 +234,13 @@ public class LetterGroup {
 			}	
 			
 			
-		}else if(depth <= 110.00){
+		}else if(depth <= 110){
 			//if depth was less than one hundred and ten feet, find bottom time column.
 			int[] timenum8 = {0, 0, 5, 10, 13, 15};
 			//step through the time columns of dive table.
 			int i;
 			for(i = 0; i <= 5; i++){
-				if(depth <= timenum8[i]){
+				if(bottomtime <= timenum8[i]){
 					//found column, break the loop.
 					correspondingNum = i;
 					break;
@@ -260,13 +260,13 @@ public class LetterGroup {
 			}	
 			
 			
-		}else if(depth <= 120.00){
+		}else if(depth <= 120){
 			//if depth was less than one hundred and twenty feet, find bottom time column.
 			int[] timenum9 = {0, 0, 5, 10, 12};
 			//step through the time columns of dive table.
 			int i;
 			for(i = 0; i <= 4; i++){
-				if(depth <= timenum9[i]){
+				if(bottomtime <= timenum9[i]){
 					//found column, break the loop.
 					correspondingNum = i;
 					break;
@@ -284,13 +284,13 @@ public class LetterGroup {
 			}	
 			
 			
-		}else if(depth <= 130.00){
+		}else if(depth <= 130){
 			//if depth was less than one hundred and thirty feet, find bottom time column.
 			int[] timenum10 = {0, 0, 5, 8};
 			//step through the time columns of dive table.
 			int i;
 			for(i = 0; i <= 3; i++){
-				if(depth <= timenum10[i]){
+				if(bottomtime <= timenum10[i]){
 					//found column, break the loop.
 					correspondingNum = i;
 					break;
