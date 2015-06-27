@@ -1,6 +1,7 @@
 // This is the Faught Dive computer letter calculator!
 //Author: Caleb Faught
 //Date: 6/27/15
+//this is using the NAUI dive tables, and I claim no ownership.
 
 package com.FaughtDive;
 
@@ -17,7 +18,7 @@ public class LetterGroup {
 			int[] timenum1 = {0, 5, 15, 25, 30, 40, 50, 70, 80, 100, 110, 130};
 			//step through the time columns of dive table.
 			int i;
-			for(i = 1; i <= 11; i++){
+			for(i = 0; i <= 11; i++){
 				if(depth <= timenum1[i]){
 					//found column, break the loop.
 					correspondingNum = i;
@@ -54,7 +55,7 @@ public class LetterGroup {
 			int[] timenum2 = {0, 10, 15, 25, 30, 40, 50, 60, 70, 80};
 			//step through the time columns of dive table.
 			int i;
-			for(i = 1; i <= 8; i++){
+			for(i = 0; i <= 8; i++){
 				if(depth <= timenum2[i]){
 					//found column, break the loop.
 					correspondingNum = i;
@@ -88,7 +89,7 @@ public class LetterGroup {
 			int[] timenum3 = {0, 10, 15, 20, 25, 30, 40, 50, 55};
 			//step through the time columns of dive table.
 			int i;
-			for(i = 1; i <= 8; i++){
+			for(i = 0; i <= 8; i++){
 				if(depth <= timenum3[i]){
 					//found column, break the loop.
 					correspondingNum = i;
@@ -120,7 +121,7 @@ public class LetterGroup {
 			int[] timenum4 = {0, 5, 10, 15, 20, 30, 35, 40, 45};
 			//step through the time columns of dive table.
 			int i;
-			for(i = 1; i <= 8; i++){
+			for(i = 0; i <= 8; i++){
 				if(depth <= timenum4[i]){
 					//found column, break the loop.
 					correspondingNum = i;
@@ -152,7 +153,7 @@ public class LetterGroup {
 			int[] timenum5 = {0, 5, 10, 15, 20, 25, 30, 35};
 			//step through the time columns of dive table.
 			int i;
-			for(i = 1; i <= 7; i++){
+			for(i = 0; i <= 7; i++){
 				if(depth <= timenum5[i]){
 					//found column, break the loop.
 					correspondingNum = i;
@@ -182,7 +183,7 @@ public class LetterGroup {
 			int[] timenum6 = {0, 5, 10, 12, 15, 20, 25};
 			//step through the time columns of dive table.
 			int i;
-			for(i = 1; i <= 6; i++){
+			for(i = 0; i <= 6; i++){
 				if(depth <= timenum6[i]){
 					//found column, break the loop.
 					correspondingNum = i;
@@ -210,7 +211,7 @@ public class LetterGroup {
 			int[] timenum7 = {0, 5, 7, 10, 15, 20, 22};
 			//step through the time columns of dive table.
 			int i;
-			for(i = 1; i <= 6; i++){
+			for(i = 0; i <= 6; i++){
 				if(depth <= timenum7[i]){
 					//found column, break the loop.
 					correspondingNum = i;
@@ -238,7 +239,7 @@ public class LetterGroup {
 			int[] timenum8 = {0, 0, 5, 10, 13, 15};
 			//step through the time columns of dive table.
 			int i;
-			for(i = 2; i <= 5; i++){
+			for(i = 0; i <= 5; i++){
 				if(depth <= timenum8[i]){
 					//found column, break the loop.
 					correspondingNum = i;
@@ -264,7 +265,7 @@ public class LetterGroup {
 			int[] timenum9 = {0, 0, 5, 10, 12};
 			//step through the time columns of dive table.
 			int i;
-			for(i = 2; i <= 4; i++){
+			for(i = 0; i <= 4; i++){
 				if(depth <= timenum9[i]){
 					//found column, break the loop.
 					correspondingNum = i;
@@ -288,7 +289,7 @@ public class LetterGroup {
 			int[] timenum10 = {0, 0, 5, 8};
 			//step through the time columns of dive table.
 			int i;
-			for(i = 2; i <= 3; i++){
+			for(i = 0; i <= 3; i++){
 				if(depth <= timenum10[i]){
 					//found column, break the loop.
 					correspondingNum = i;
@@ -306,6 +307,11 @@ public class LetterGroup {
 			
 			
 		}
-		System.out.println("You are a "+ letter +" Diver.");	
+		if(letter == null){
+			System.out.println("You are in need of a decompression stop for atleast 5 minutes at 15 feet.");
+		}else {
+			System.out.println("You are a "+ letter +" Diver.");	
+		}
+		
 	}
 }
