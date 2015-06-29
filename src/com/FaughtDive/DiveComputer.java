@@ -2,7 +2,7 @@
 //Author: Caleb Faught
 //Date: 6/27/15
 //
-//To Do: make the gui
+//To Do: make the gui, add surface interval class
 
 package com.FaughtDive;
 

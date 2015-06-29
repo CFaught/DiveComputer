@@ -1,7 +1,7 @@
 // This is the Faught Dive computer letter calculator!
 //Author: Caleb Faught
 //Date: 6/27/15
-//this is using the NAUI dive tables, and I claim no ownership.
+//this is using the NAUI dive tables, and I claim no ownership except for the code in this class.
 
 package com.FaughtDive;
 
