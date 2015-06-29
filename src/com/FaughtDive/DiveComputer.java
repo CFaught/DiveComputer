@@ -28,8 +28,21 @@ public class DiveComputer {
 		String Letter = LetterGroup1.Diver(depth, bottomtime);
 		if(Letter == null){
 			System.out.println("You are in need of a decompression stop for atleast 5 minutes at 15 feet.");
+			System.out.println("You are a "+ Letter +" Diver. ");
 		}else {
-			System.out.println("You are a "+ Letter +" Diver.");
+			System.out.println("You are a "+ Letter +" Diver. ");
+		}
+		
+		//the next calculation involves how long of a wait on the surface affects your nitrogen residual.
+		//this is calculated using the previous dive letter group and a given surface interval.
+		SurfaceInterval SurfaceInterval1 = new SurfaceInterval();
+		System.out.println("What is your surface interval? (in whole minutes)");
+		int surfaceInt = input.nextInt();
+		if(surfaceInt < 10){
+			System.out.println("You should wait atleast 10 minutes between dives. ");
+		}else if(surfaceInt > 10){
+			String newLetter = SurfaceInterval1.SIT(Letter, surfaceInt);
+			System.out.println("You are now a " + newLetter + " Diver going into your next dive.");
 		}
 		
 		
