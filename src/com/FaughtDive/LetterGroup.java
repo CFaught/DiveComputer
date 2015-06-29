@@ -10,7 +10,7 @@ public class LetterGroup {
 	private String letter;
 	private int correspondingNum;
 	
-	public void Diver(int depth, int bottomtime){
+	public String Diver(int depth, int bottomtime){
 		//take depth and time to calculate ending diver letter.
 		
 		if(depth <= 40){
@@ -307,11 +307,6 @@ public class LetterGroup {
 			
 			
 		}
-		if(letter == null){
-			System.out.println("You are in need of a decompression stop for atleast 5 minutes at 15 feet.");
-		}else {
-			System.out.println("You are a "+ letter +" Diver.");	
-		}
-		
+	return letter;
 	}
 }
