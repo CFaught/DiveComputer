@@ -40,6 +40,15 @@ public class SurfaceInterval {
 				case 2: newLetter = "A";
 				break;
 			}
+		}else if(Letter == "C"){
+			int[] surfaceTime = {0, 99, 289, 1440};
+			int i;
+			for(i = 0; i<= 3; i++){
+				if(surfaceInt <= surfaceTime[i]){
+					correspondingNum = i;
+					break;
+				}
+			}
 		}
 		
 		return newLetter;
